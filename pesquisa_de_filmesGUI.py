@@ -50,5 +50,4 @@ while True:
     else: 
         valores["detalhes"] = print_detalhes(filme)
 
-    
-janela.close()
+ 
