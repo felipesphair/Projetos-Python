@@ -8,7 +8,7 @@ layout = [
     [sg.Text("Buscar filme")],
     [sg.InputText(key="titulo")],
     [sg.Button("BUSCAR"), sg.Button("LIMPAR")],
-    [sg.Text(key="detalhes")
+    [sg.Text("", key="detalhes")
     ]
 ]
 
