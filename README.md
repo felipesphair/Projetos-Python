@@ -7,4 +7,6 @@ Projetos para praticar python.
 
 2- Pesquisa de filmes com GUI
 
-progress...
+![image](https://user-images.githubusercontent.com/107360437/227069739-f9200f19-c037-47e4-966f-e4a2dd3984c4.png)
+
+Em progresso.
