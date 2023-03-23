@@ -8,7 +8,7 @@ layout = [
     [sg.Text("Buscar filme")],
     [sg.InputText(key="titulo")],
     [sg.Button("BUSCAR"), sg.Button("LIMPAR")],
-    [sg.Text("", key="detalhes")
+    [sg.Text("",key="detalhes")
     ]
 ]
 
@@ -19,12 +19,10 @@ while True:
     if evento == sg.WIN_CLOSED:
         break
     
-    if evento == "LIMPAR":
-        valores["detalhes"] = ""
-        valores["titulo"] = ""
     
     if evento == "BUSCAR":
         op = valores["titulo"]
+
         
     def titulo(pesquisa):
         try: 
@@ -46,8 +44,12 @@ while True:
 
     filme = titulo(op)
     if filme["Response"] == "False":
-        valores["detalhes"] = "Filme nao encontrado!"
+        janela["detalhes"].update("Filme nao encontrado!")
     else: 
-        valores["detalhes"] = print_detalhes(filme)
+        janela["detalhes"].update(print_detalhes(filme))
 
+    if evento == "LIMPAR":
+        janela["titulo"].update("")
+        janela["detalhes"].update("")
+        
  
