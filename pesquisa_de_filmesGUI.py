@@ -51,5 +51,5 @@ while True:
     if evento == "LIMPAR":
         janela["titulo"].update("")
         janela["detalhes"].update("")
-        
- 
+    
+    
