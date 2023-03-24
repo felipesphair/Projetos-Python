@@ -35,21 +35,23 @@ while True:
 
     def print_detalhes(filme):
         
-        print("Titulo: ", filme['Title'])
-        print("ANO: ", filme['Year'])
-        print("Diretor: ", filme['Director'])
-        print("Atores: ", filme['Actors'])
-        print("Nota: ", filme['imdbRating'])
-        print("Premios: ", filme['Awards'])
+        valor = ('Titulo: ', filme['Title'],
+        "ANO: ", filme['Year'],
+        "Diretor: ", filme['Director'],
+        "Atores: ", filme['Actors'],
+        "Nota: ", filme['imdbRating'],
+        "Premios: ", filme['Awards'])
+
+        return valor
 
     filme = titulo(op)
+    valor = print_detalhes(filme)
     if filme["Response"] == "False":
         janela["detalhes"].update("Filme nao encontrado!")
     else: 
-        janela["detalhes"].update(print_detalhes(filme))
+        janela["detalhes"].update(valor)
 
     if evento == "LIMPAR":
         janela["titulo"].update("")
         janela["detalhes"].update("")
-    
     
