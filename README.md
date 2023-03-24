@@ -13,6 +13,4 @@ Projetos para praticar python.
 
 ![image](https://user-images.githubusercontent.com/107360437/227071919-852f3c7b-cabf-465f-bc04-9d8f6fb054e6.png)
 
-![image](https://user-images.githubusercontent.com/107360437/227072003-85170dea-fccd-44c2-ab32-2e12c78926a7.png)
-
-Em progresso, faltando apenas imprimir os detalhes dentro da janela da interface.
+![image](https://user-images.githubusercontent.com/107360437/227396555-da4e3a18-bf98-4b67-9ac5-618f5ba951eb.png)
